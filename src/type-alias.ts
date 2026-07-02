@@ -14,9 +14,10 @@ const user1 : user = {
         firstName: 'Asad',
         lastName: 'Zaman'
         
-    }
+    },
     gender: 'Male'
 }
+
 
 const user2 = {
     name: {
@@ -24,3 +25,10 @@ const user2 = {
         lastName: 33
     }
 }
+
+//functions
+type addFunc = (num1 : number , num2: number) => number
+
+const add : addFunc= (num1, num2) => num1 + num2;
+
+
