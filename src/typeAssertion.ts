@@ -1,10 +1,10 @@
-const kgToGMConverter = (input) => {
+const kgToGMConverter = (input : string | number) => {
 if(typeof input === "number"){
     return input*1000;
 }
 else if(typeof input === "string"){
-    input = input.split(" ");
-    const [value] = input;
+    const parts = input.split(" ");
+    const [value] = parts;
     const ConvertedNumber = Number(value);
     return ConvertedNumber*1000;
 }
